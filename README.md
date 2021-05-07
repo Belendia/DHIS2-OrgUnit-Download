@@ -39,6 +39,7 @@
     ```
     pip install -r requirements.txt
     ```
+- Open app.py and change SERVER, USERNAME and PASSWORD
 - Run the program
   ```
   python app.py
