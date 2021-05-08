@@ -13,7 +13,7 @@ class DHIS2:
     def __init__(self):
         self.api = Api(SERVER, USERNAME, PASSWORD)
         self.org_units = {}
-        self.__org_unit_file_name = 'OrgUnits.json'
+        self.__org_unit_file_name = 'metadata/OrgUnits.json'
 
     def __download_org_units(self):
         print('Downloading org units...')
@@ -31,7 +31,7 @@ class DHIS2:
     def __save_org_units(self):
         print('Saving org units to {} ... '.format(self.__org_unit_file_name), end=" ")
         del self.org_units['pager']
-        with open('org_units.json', 'w') as f:
+        with open(self.__org_unit_file_name, 'w') as f:
             json.dump(self.org_units, f)
         print('Done')
 
