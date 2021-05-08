@@ -35,7 +35,7 @@
     ```
     mkvirtualenv dhis
     ```
-- Install the dependencies
+- Install the dependency libraries
     ```
     pip install -r requirements.txt
     ```
