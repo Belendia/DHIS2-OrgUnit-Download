@@ -9,7 +9,7 @@ ORG_UNIT_FIELDS = 'id,name,shortName,featureType,coordinates,parent,openingDate'
 ORG_UNIT_GROUP_FIELDS = 'id,name,shortName,organisationUnits'
 ORG_UNIT_LEVEL_FIELDS = 'id,name,level'
 ORG_UNIT_GROUP_SET_FIELDS = 'id,name,description,compulsory,includeSubhierarchyInAnalytics,dataDimension,' \
-                            'organisationUnitGroups '
+                            'organisationUnitGroups'
 PAGE_SIZE = 50
 
 
